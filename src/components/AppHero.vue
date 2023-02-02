@@ -1,11 +1,11 @@
 <script>
 
 export default {
-  name: 'HelloWorld',
+  name: 'AppHero',
   data() {
     return {
 
-    msg : 'La mia prima app con Vite!',
+    image : 'https://picsum.photos/200/300'
 
     };
   },
@@ -15,12 +15,11 @@ export default {
 
 <template>
 
-  <h1>{{ msg }}</h1>
+<img :src="image">
+
 
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
-}
+
 </style>
